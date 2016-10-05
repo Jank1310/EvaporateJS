@@ -1519,8 +1519,8 @@
 			awsSignatureVersion: con.awsSignatureVersion,
                 	stringToSign: stringToSign,
 			dateString: authRequester.dateString,
-                      	sign_params: makeSignParamsObject(me.signParams),
-                        sign_headers: makeSignParamsObject(con.signHeaders)
+                      	signParams: makeSignParamsObject(me.signParams),
+                        signHeaders: makeSignParamsObject(con.signHeaders)
                 }, function (err, data) {
  		    if (err) {
                         var warnMsg = 'failed to get authorization with async function ' + err;
